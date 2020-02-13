@@ -1,4 +1,4 @@
-const view = (data) => {
+const status_view = (data) => {
 
     let html = `<html>
 <head>
@@ -125,7 +125,7 @@ function OpenVisionRuntime() {
 
 </head>
 <BODY bgcolor= #FFF9e3>
-
+${data.value}
 <table width="100%" border="2">
   <tr>
   <td>
@@ -227,7 +227,7 @@ CFG:
 </PRE>
 </BODY>
 </HTML>`;
-
+    return html;
 };
 
-module.exports.view = view;
+module.exports.status_view = status_view;
