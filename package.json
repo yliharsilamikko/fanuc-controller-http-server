@@ -1,0 +1,21 @@
+{
+  "name": "fanuc-controller-http-sever",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "start-dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yliharsilamikko/fanuc-controller-http-sever.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yliharsilamikko/fanuc-controller-http-sever/issues"
+  },
+  "homepage": "https://github.com/yliharsilamikko/fanuc-controller-http-sever#readme"
+}
