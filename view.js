@@ -1,3 +1,14 @@
+// allign numbers to start from same location if minus sign is added
+const format_value = (value) => {
+    let str = '';
+    if (value >= 0) {
+        str += ' ';
+    }
+    str += value.toFixed(2);
+
+    return str;
+};
+
 const status_view = (data) => {
 
     let html = `<html>
@@ -125,7 +136,7 @@ function OpenVisionRuntime() {
 
 </head>
 <BODY bgcolor= #FFF9e3>
-${data.value}
+
 <table width="100%" border="2">
   <tr>
   <td>
@@ -157,12 +168,12 @@ CURRENT ROBOT POSITION::
 Group #:  1
  
 CURRENT JOINT POSITION:
-Joint   1:     86.75
-Joint   2:    -45.63
-Joint   3:    -10.99
-Joint   4:     56.19
-Joint   5:    -81.55
-Joint   6:    -94.01
+Joint   1:    ${format_value(data.joints[0])}
+Joint   2:    ${format_value(data.joints[1])}
+Joint   3:    ${format_value(data.joints[2])}
+Joint   4:    ${format_value(data.joints[3])}
+Joint   5:    ${format_value(data.joints[4])}
+Joint   6:    ${format_value(data.joints[5])}
 
 Frame #:  0  Tool #:  7
 CURRENT USER FRAME POSITION:

@@ -13,7 +13,7 @@ fanuc.run();
 console.log('Start server');
 app.get('/', (req, res, next) => {
     res.send(view.status_view({
-        value: fanuc.joints[0]
+        joints: fanuc.joints
     }));
 });
 
