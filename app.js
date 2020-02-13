@@ -3,6 +3,7 @@ const express = require('express');
 const robot = require('./robot');
 const view = require('./view');
 
+const PORT = process.env.PORT || 8080;
 const app = express();
 
 console.log('Start robot');
@@ -21,4 +22,4 @@ app.use((req, res, next) => {
 });
 
 
-app.listen(8080);
+app.listen(PORT);
